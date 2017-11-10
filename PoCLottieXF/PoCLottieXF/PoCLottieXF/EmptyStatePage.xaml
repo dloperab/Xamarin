@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoCLottieXF.EmptyStatePage"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundColor="#efefef">
+  <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand">
+    <lottie:AnimationView 
+            x:Name="AnimationView" 
+            Animation="fail.json" 
+            AutoPlay="True" 
+            Loop="True"
+            HeightRequest="200"
+            VerticalOptions="StartAndExpand"
+            Margin="20,50,20,0"/>
+    <Label Text="No tienes PQRs registradas"
+           FontSize="18"
+           FontAttributes="Bold"
+           Margin="20,0,20,0"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="CenterAndExpand"/>
+    <Button Text="Cargar"
+            BackgroundColor="#111111"
+            TextColor="White"
+            FontSize="16"
+            Margin="20,0,20,5"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End"/>
+    <Button Text="Registrar"
+            BackgroundColor="#2d2b58"
+            TextColor="White"
+            FontSize="16"
+            Margin="20,0,20,20"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End"/>
+  </StackLayout>
+</ContentPage>

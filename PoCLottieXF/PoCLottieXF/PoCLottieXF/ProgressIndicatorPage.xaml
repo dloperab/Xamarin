@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoCLottieXF.ProgressIndicatorPage"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundColor="#efefef">
+  <StackLayout VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="FillAndExpand">
+    <lottie:AnimationView 
+            x:Name="AnimationView" 
+            Animation="glow_loading.json" 
+            AutoPlay="True" 
+            Loop="True"
+            HeightRequest="150"/>
+    <Label Text="Loading information..."
+           FontSize="18"
+           HorizontalOptions="CenterAndExpand"/>
+  </StackLayout>
+</ContentPage>
